@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="converter-container">
+    <h1>Currency Converter</h1>
+
+    <div class="input-box">
+      <label>Amount</label>
+      <input type="number" id="amount" value="1">
+    </div>
+
+    <div class="selection-grid">
+      <div class="select-group">
+        <label>From</label>
+        <div class="select-wrapper">
+          <img src="https://flagsapi.com/US/flat/64.png" id="from-flag">
+          <select id="from-currency"></select>
+        </div>
+      </div>
+
+      <div class="swap-icon" id="swap-currencies">
+        <i class="fa-solid fa-right-left"></i>
+      </div>
+
+      <div class="select-group">
+        <label>To</label>
+        <div class="select-wrapper">
+          <img src="https://flagsapi.com/PK/flat/64.png" id="to-flag">
+          <select id="to-currency"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-box">
+      <p id="exchange-rate-text">Getting exchange rate...</p>
+      <h2 id="result-text">0.00</h2>
+    </div>
+
+    <button id="convert-btn">Convert Now</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

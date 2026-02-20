@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+.converter-container {
+  width: 380px;
+  padding: 30px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input[type="number"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  padding: 0 20px;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+}
+
+.selection-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.select-group {
+  flex: 1;
+}
+
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  padding: 8px 15px;
+  gap: 10px;
+}
+
+.select-wrapper img {
+  width: 24px;
+}
+
+select {
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.swap-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.result-box {
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 20px;
+  border: 1px dashed #000000;
+  border-radius: 15px;
+}
+
+#exchange-rate-text {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+#result-text {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#convert-btn {
+  width: 100%;
+  height: 55px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
