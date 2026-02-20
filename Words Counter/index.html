@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Words Counter</h1>
+            <p>Simple and clean text analysis</p>
+        </header>
+
+        <section class="editor-section">
+            <div class="input-wrapper">
+                <textarea class="input-container" id="textInput" placeholder="Enter your text here..."
+                    autofocus></textarea>
+                <div class="controls">
+                    <button class="btn toUpperCase">UPPERCASE</button>
+                    <button class="btn toLowerCase">lowercase</button>
+                    <button class="btn removeSpaces">Clean Spaces</button>
+                    <button class="btn copyBtn" id="copyBtn">Copy</button>
+                    <button class="btn clearBtn" id="clearBtn">Clear</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-value" id="wordCount">0</span>
+                <span class="stat-label">Words</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="charCount">0</span>
+                <span class="stat-label">Characters</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="sentenceCount">0</span>
+                <span class="stat-label">Sentences</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="readingTime">0m</span>
+                <span class="stat-label">Read Time</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
