@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Functional Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="clock-container">
+    <div class="tabs">
+      <button id="clock-tab" class="active">Clock</button>
+      <button id="stopwatch-tab">Stopwatch</button>
+      <button id="timer-tab">Timer</button>
+    </div>
+
+    <div id="clock-section" class="section">
+      <div id="time-display">00:00:00</div>
+      <div id="date-display">Loading...</div>
+    </div>
+
+    <div id="stopwatch-section" class="section hidden">
+      <div id="stopwatch-display">00:00:00.00</div>
+      <div class="controls">
+        <button id="sw-start">Start</button>
+        <button id="sw-stop">Stop</button>
+        <button id="sw-reset">Reset</button>
+      </div>
+    </div>
+
+    <div id="timer-section" class="section hidden">
+      <div class="timer-input">
+        <input type="number" id="timer-min" placeholder="Min" min="0" max="99">
+        <input type="number" id="timer-sec" placeholder="Sec" min="0" max="59">
+      </div>
+      <div id="timer-display">00:00</div>
+      <div class="controls">
+        <button id="tm-start">Start</button>
+        <button id="tm-stop">Stop</button>
+        <button id="tm-reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
