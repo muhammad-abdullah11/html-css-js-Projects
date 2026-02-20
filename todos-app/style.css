@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.main-container {
+    width: 650px;
+    margin-top: 60px;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+}
+
+#navBar {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#navBarInfo {
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#addToDo {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.addToDoBtn {
+    width: 140px;
+    height: 45px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#saveToDo {
+    width: 140px;
+    height: 45px;
+    background-color: #22c55e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ToDo {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.ToDo1 {
+    height: 35px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 15px;
+    background-color: #fcfcfc;
+}
+
+input[type="checkbox"].ToDo1 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+input[type="text"].ToDo1 {
+    flex-grow: 1;
+}
+
+input[type="date"].ToDo1 {
+    width: 130px;
+}
+
+.ToDoDelBtn {
+    width: 70px;
+    height: 35px;
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ToDoEditBtn {
+    width: 70px;
+    height: 35px;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#delToDo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#clearToDo {
+    width: 160px;
+    height: 45px;
+    background-color: #ffffff;
+    color: #ef4444;
+    border: 1px solid #ef4444;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
