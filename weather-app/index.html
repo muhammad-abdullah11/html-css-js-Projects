@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <div id="welcome-screen" class="screen">
+      <div class="icon-section">
+        <i class="fa-solid fa-cloud-bolt main-icon"></i>
+      </div>
+      <div class="welcome-text">
+        <h1>Weather <i class="fa-solid fa-temperature-half"></i></h1>
+        <h2 class="sub-title">Forecasts</h2>
+      </div>
+      <button id="get-start-btn">Get Start</button>
+    </div>
+
+    <div id="weather-screen" class="screen hidden">
+      <h1>Weather App</h1>
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter city">
+        <button id="get-weather-btn">Get Weather</button>
+      </div>
+      <div id="loading" class="status-msg hidden">Loading...</div>
+      <div id="error" class="status-msg error-msg hidden"></div>
+
+      <div id="weather-info" class="hidden">
+        <h2 id="city-name"></h2>
+        <div class="data-grid">
+          <div class="data-card">
+            <h3>Temperature</h3>
+            <p id="temp"></p>
+          </div>
+          <div class="data-card">
+            <h3>Feels Like</h3>
+            <p id="feels-like"></p>
+          </div>
+          <div class="data-card">
+            <h3>Condition</h3>
+            <p id="condition"></p>
+          </div>
+          <div class="data-card">
+            <h3>Humidity / Wind</h3>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
