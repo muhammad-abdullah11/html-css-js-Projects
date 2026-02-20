@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calc-box">
+        <div class="header">
+            <h1>Calculator</h1>
+        </div>
+        <div class="display-box">
+            <input type="text" id="display" readonly placeholder="0">
+        </div>
+        <div class="keys">
+            <button class="btn grey" onclick="takeInput('e')">e</button>
+            <button class="btn grey" onclick="takeInput('π')">π</button>
+            <button class="btn grey" onclick="calculateSquare()">x²</button>
+            <button class="btn opBtn" onclick="removeLast()">DEL</button>
+
+            <button class="btn grey" onclick="takeInput('7')">7</button>
+            <button class="btn grey" onclick="takeInput('8')">8</button>
+            <button class="btn grey" onclick="takeInput('9')">9</button>
+            <button class="btn opBtn" onclick="takeInput('-')">-</button>
+
+            <button class="btn grey" onclick="takeInput('4')">4</button>
+            <button class="btn grey" onclick="takeInput('5')">5</button>
+            <button class="btn grey" onclick="takeInput('6')">6</button>
+            <button class="btn opBtn" onclick="takeInput('+')">+</button>
+
+            <button class="btn grey" onclick="takeInput('1')">1</button>
+            <button class="btn grey" onclick="takeInput('2')">2</button>
+            <button class="btn grey" onclick="takeInput('3')">3</button>
+            <button class="btn opBtn" onclick="takeInput('×')">×</button>
+
+            <button class="btn grey" onclick="clearField()">AC</button>
+            <button class="btn grey" onclick="takeInput('0')">0</button>
+            <button class="btn grey" onclick="takeInput('.')">.</button>
+            <button class="btn opBtn" onclick="takeInput('÷')">÷</button>
+
+            <button class="btn grey" onclick="takeInput('%')">%</button>
+            <button class="btn grey" onclick="takeInput('(')">(</button>
+            <button class="btn grey" onclick="takeInput(')')">)</button>
+            <button class="btn opBtn" onclick="showOutput()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
