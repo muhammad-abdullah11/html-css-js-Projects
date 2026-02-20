@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #000000;
+}
+
+.test-container {
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mode-btn {
+    padding: 5px 15px;
+    border: 1px solid #000000;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mode-btn.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.stats-bar {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.stat {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666666;
+}
+
+.stat span {
+    color: #000000;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.quote {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #888888;
+    text-align: justify;
+    min-height: 120px;
+}
+
+.quote span {
+    position: relative;
+}
+
+.correct {
+    color: #22c55e;
+}
+
+.incorrect {
+    background-color: #fee2e2;
+    color: #ef4444;
+    border-radius: 2px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    background-color: #fcfcfc;
+}
+
+.controls {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#restart-btn {
+    padding: 12px 35px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
